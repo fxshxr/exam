@@ -1,7 +1,7 @@
 <?php
 
-    $link = mysqli_connect("localhost", "root", "", "qs");
-    $db = mysqli_select_db($link , "qs");
+    $link = mysqli_connect("std-mysql", "std_923", "12345678", "std_923");
+    $db = mysqli_select_db($link , "std_923");
     
         
         if (mysqli_connect_errno()) {
