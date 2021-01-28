@@ -42,7 +42,7 @@
                             </form> '
                             
                             );
-            $sqlaa = "select 0 from qtext ";
+            $sqlaa = "select 1 from qtext ";
             $as = mysqli_query($link, $sqlaa);
             
             $row = mysqli_fetch_array($as);
