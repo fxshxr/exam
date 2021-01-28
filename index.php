@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +13,10 @@
 </head>
 <body>
     <div class="container">
-        <form action="post">
-        <h1>Добро пожаловать в систему</h1>
-        <p>Введите пароль Администратора (12345)</p>
-        <input type="password" required>
-        <input type="button" value="Войти" >
-        </form>
+        <h1>Добро пожаловать в опрос</h1>
+      
+
+        <a href="login.php">Войти как администратор</a>
     </div>
 </body>
 </html>
