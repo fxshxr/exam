@@ -1,16 +1,34 @@
 <?php
     include("sql.php");
     session_start();
+   
+    $sess = $_POST['session_id'];
     
-        
     
+    $link = mysqli_connect("localhost", "root", "", "qs");
+  
+    if (!$link) {
+      die("Connection failed: " . mysqli_connect_error());
+    }
+    if (isset($_POST['session_id'])){
+    $sql = "CREATE TABLE $sess (
+    qtype VARCHAR(30) NOT NULL,
+    qtext VARCHAR(30) NOT NULL,
+    qansw VARCHAR(30) NOT NULL
     
+    )";
+    }
 
-        
-      
- 
+    if (mysqli_query($link, $sql)) {
+      echo "Table $sess created successfully";
+    } 
+    else {
+      echo "Error creating table: " . mysqli_error($link);
+    }
 
+    mysqli_close($link);
 
+   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +43,16 @@
         <h1>Добро пожаловать в панель Администратора</h1>
         <form method="post">
             <h1>Создание новой сессии</h1>
-            <p>введите id сессии <input name="session_id" type="text" required>  </p>
+            <p>Введите название сессии <input name="session_id" type="text" required>  </p>
+            <p>Существующие сесии:</p>
+            
+            <input type="submit" value="Создать Cессию">
+            
+        </form>
+        
+
+        <form method="post">
+           
             
             <p>Выберите вид вопроса 
                 <select name="questions" id="qtype" name="qtype" required>

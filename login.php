@@ -7,7 +7,7 @@
 
     
 {
- header("Location: admin.php");
+ header("Location: admin1.php");
  exit;
  }
 else echo '<script>alert("Неверный пароль")</script>';
