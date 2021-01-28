@@ -9,8 +9,11 @@
                 </head>
                 <body>
                     <div class="container">
-                        <h1>Добро пожаловать в опрос</h1>   
-                            <p> Вопрос:  </p>
+                        <h1>Добро пожаловать в опрос</h1>  
+                        <form method="post">    
+                            <p> Вопрос:  <input type="text" placeholder="ответ" name="qansw"></input></p>
+                            <input type="submit" value="отправить ответ"></input>
+                            </form> 
             <!DOCTYPE html>
                 <html lang="en">
                 <head>
@@ -21,8 +24,11 @@
                 </head>
                 <body>
                     <div class="container">
-                        <h1>Добро пожаловать в опрос</h1>   
-                            <p> Вопрос:  </p>
+                        <h1>Добро пожаловать в опрос</h1>  
+                        <form method="post">    
+                            <p> Вопрос:  <input type="text" placeholder="ответ" name="qansw"></input></p>
+                            <input type="submit" value="отправить ответ"></input>
+                            </form> 
             <!DOCTYPE html>
                 <html lang="en">
                 <head>
@@ -33,5 +39,8 @@
                 </head>
                 <body>
                     <div class="container">
-                        <h1>Добро пожаловать в опрос</h1>   
-                            <p> Вопрос:  </p>
+                        <h1>Добро пожаловать в опрос</h1>  
+                        <form method="post">    
+                            <p> Вопрос:  <input type="text" placeholder="ответ" name="qansw"></input></p>
+                            <input type="submit" value="отправить ответ"></input>
+                            </form> 
