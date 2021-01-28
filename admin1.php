@@ -4,6 +4,12 @@
     $sess = $_POST['session_id'];
     $qtext = htmlentities(mysqli_real_escape_string($link, $_POST['qtext']));
     $qansw = htmlentities(mysqli_real_escape_string($link, $_POST['qansw']));
+
+    $sqlaa = "select qtext from $sess ";
+    $as = mysqli_query($link, $sqlaa);
+    
+
+
     $link = mysqli_connect("localhost", "root", "", "qs");
         if (!$link) {
         die("Connection failed: " . mysqli_connect_error());
